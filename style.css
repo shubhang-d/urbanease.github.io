@@ -17,8 +17,6 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
-    /* background-color: red; */
     border-bottom: 2px solid grey;
 }
 
@@ -33,14 +31,15 @@ nav{
     width: 140px;
 }
 
-ul{
+.nav-ul{
     margin: 0px 20px
 }
 
-li{
+.nav-ul li{
     margin-left: 20px;
     display: inline;
     color: white;
+    cursor: pointer;
 }
 
 .material-symbols-outlined {
@@ -63,7 +62,7 @@ li{
     margin: 10px;
 }
 
-#common-h{
+.common-h{
     color: white;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -85,7 +84,12 @@ li{
     background-color: yellow;
     border: 0px;
     display: flex;
-    align-items: center;   
+    align-items: center;
+    cursor: pointer;
+}
+
+#shop-collection:hover{
+    box-shadow: 3px 3px 2px black;
 }
 
 .sec-2{
@@ -111,6 +115,22 @@ li{
     background-size: contain;
     display: flex;
     align-items: center;
+}
+
+.chair-text{
+    transition: 0.25s ease-in-out;
+}
+
+.chair-text:hover{
+    transform: translateY(-20px);
+}
+
+.cupboard-text{
+    transition: 0.25s ease-in-out;
+}
+
+.cupboard-text:hover{
+    transform: translateY(-20px);
 }
 
 .row-2{
@@ -161,4 +181,72 @@ li{
 
 #furniture-icon{
     font-size: 50px;
+    transition: 0.25s ease-in-out;
+}
+
+.other-furniture{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.furniture-icon:hover{
+    transform: translateY(-20px);
+}
+
+.sec-3{
+    background-image: url('blue-furniture.jpg');
+    background-color: black;
+    background-blend-mode: luminosity;
+    width: 100vw;
+    height: 100vh;
+    filter: invert(10%);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.logofoot{
+    width: 200px;
+    height: 100px;
+}
+
+footer{
+    background-color: rgb(131, 131, 156);
+}
+.flexfoot-div{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.logofoot-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.normalfoot-div{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+h4{
+    margin-bottom: 20px;
+}
+
+.normalfoot-div ul{
+    list-style-type: none;
+}
+
+.copyrightfoot-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
