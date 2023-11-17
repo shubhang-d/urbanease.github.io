@@ -3,7 +3,7 @@
     padding: 0px;
 }
 header{
-    background-image: url('furniture.jpg');
+    background-image: url('index_images/furniture.jpg');
     background-color: black;
     background-blend-mode: luminosity;
     width: 100vw;
@@ -107,7 +107,7 @@ nav{
 }
 
 .image-block-1{
-    background-image: url("chair.jpg");
+    background-image: url("index_images/chair.jpg");
     width: 400px;
     height: 800px;
     background-position: center;
@@ -149,7 +149,7 @@ nav{
 }
 
 .image-block-2{
-    background-image: url("cupboard.jpg");
+    background-image: url("index_images/cupboard.jpg");
     width: 400px;
     height: 300px;
     background-position: center;
@@ -171,7 +171,7 @@ nav{
 }
 
 .image-block-3{
-    background-image: url('lamp.jpg');
+    background-image: url('index_images/lamp.jpg');
     width: 400px;
     height: 300px;
     background-position: center;
@@ -203,7 +203,7 @@ nav{
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url('blue-furniture.jpg');
+    url('index_images/blue-furniture.jpg');
     /* background-color: black;
     background-blend-mode: luminosity; */
     width: 100vw;
@@ -264,4 +264,5 @@ h4{
     justify-content: center;
     align-items: center;
     font-weight: 100;
+    margin-bottom: 20px;
 }
