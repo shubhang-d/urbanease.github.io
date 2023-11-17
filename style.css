@@ -70,7 +70,7 @@ nav{
     margin-bottom: 10px;
 }
 
-#heading{
+.heading{
     color: white;
     font-size: 50px;
     text-wrap: pretty;
@@ -197,9 +197,15 @@ nav{
 }
 
 .sec-3{
-    background-image: url('blue-furniture.jpg');
-    background-color: black;
-    background-blend-mode: luminosity;
+    /* background-image: url('blue-furniture.jpg'); */
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('blue-furniture.jpg');
+    /* background-color: black;
+    background-blend-mode: luminosity; */
     width: 100vw;
     height: 100vh;
     filter: invert(10%);
@@ -210,15 +216,19 @@ nav{
     justify-content: center;
 }
 
+.color-h{
+    color: #f1f1f1;
+}
+
 
 .logofoot{
     width: 200px;
     height: 100px;
 }
 
-footer{
+/* footer{
     background-color: rgb(131, 131, 156);
-}
+} */
 .flexfoot-div{
     display: flex;
     justify-content: space-around;
@@ -244,9 +254,14 @@ h4{
     list-style-type: none;
 }
 
+.normalfoot-div li{
+    font-weight: 100;
+}
+
 .copyrightfoot-div{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 100;
 }
