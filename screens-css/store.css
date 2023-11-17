@@ -100,6 +100,10 @@ nav{
     margin: 20px 30px;
 }
 
+.product:hover img{
+    box-shadow: 5px 5px 5px grey;
+}
+
 .product-desc{
     display: flex;
     justify-content: space-between;
