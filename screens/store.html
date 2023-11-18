@@ -11,10 +11,68 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lexend:wght@600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="../screens-js/store.js"></script>
     <link rel="stylesheet" href="../screens-css/store.css">
     <title>Urban Ease - Home Office Furniture</title>
 </head>
 <body>
+
+    <div class="overlay-sidebar" id="sidebarOverlay">
+        <div class="cart-sidebar" id="cartSidebar">
+            <!-- <p>this is cart sidebar</p> -->
+            <div class="cart-head">
+                <p class="cart-title">Shopping Cart</p>
+                <button class="close-button-sidebar" onclick="closeSidebar()"><span class="material-symbols-outlined">close</span></button>
+            </div>
+            <div class="cart-body">
+                <div class="cart-products-cards">
+                    <!-- <div class="cart-product">
+                        <div class="another-cart-div">
+                            <img class="cart-product-image" src="../product_images/chairs/brown-wooden-framed-gray-padded-chair.jpg" alt="chair">
+                            <div class="cart-product-desc">
+                                <p class="cart-product-title">Brown Wooden Framed gray Padded Chair</p>
+                                <p class="cart-product-price">$100.00</p>
+                            </div>
+                        </div>
+                        <div class="cart-product">
+                            <div class="another-cart-div">
+                                <img class="cart-product-image" src="../product_images/chairs/brown-wooden-framed-gray-padded-chair.jpg" alt="chair">
+                                <div class="cart-product-desc">
+                                    <p class="cart-product-title">Brown Wooden Framed gray Padded Chair</p>
+                                    <p class="cart-product-price">$100.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                <hr>
+                <div class="cart-total">
+                    <table>
+                        <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                        </tr>
+                        <tr>
+                            <td>Brown Wooden Framed gray Padded Chair</td>
+                            <td>$100.00</td>
+                        </tr>
+                        <tr>
+                            <td>Brown Wooden Framed gray Padded Chair</td>
+                            <td>$100.00</td>
+                        </tr>
+                        <tr>
+                            <th>Total</th>
+                            <th>$200.00</th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="checkout-btn-div">
+                    <button class="checkout-btn">checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <header>
         <nav>
             <div id="logo-header">
@@ -30,7 +88,7 @@
                 <li>About</li>
                 <li>Contact</li>
                 <li><span class="material-symbols-outlined">search</span></li>
-                <li><span class="material-symbols-outlined">shopping_cart</span></li>
+                <li><button class="cart-button" onclick="openNav()"><span class="material-symbols-outlined">shopping_cart</span></button></li>
                 <li><a href="login_page.html"><span class="material-symbols-outlined">account_circle</span></a></li>
             </ul>
         </nav>
@@ -48,7 +106,14 @@
                             <p class="product-price">$100.00</p>   
                         </div>
                         <div class="add-to-cart">
-                            <span class="material-symbols-outlined">add_shopping_cart</span>
+                            <button 
+                            class="cart-button" 
+                            style="color: black;" 
+                            onclick="createCartElement('../product_images/chairs/brown-wooden-framed-gray-padded-chair.jpg',
+                             'Brown Wooden Framed gray Padded Chair',
+                              '$100.00')">
+                              <span class="material-symbols-outlined">add_shopping_cart</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -60,7 +125,14 @@
                             <p class="product-price">$100.00</p>
                         </div>
                         <div class="add-to-cart">
-                            <span class="material-symbols-outlined">add_shopping_cart</span>
+                            <button 
+                            class="cart-button" 
+                            style="color: black;" 
+                            onclick="createCartElement('../product_images/chairs/tufted-white-leather-sofa-chair.jpg',
+                             'Tufted White Leather Sofa Chair',
+                              '$100.00')">
+                              <span class="material-symbols-outlined">add_shopping_cart</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -72,7 +144,14 @@
                             <p class="product-price">$100.00</p>
                         </div>
                         <div class="add-to-cart">
-                            <span class="material-symbols-outlined">add_shopping_cart</span>
+                            <button 
+                            class="cart-button" 
+                            style="color: black;" 
+                            onclick="createCartElement('../product_images/laptop-stand/mac-laptop-stand.jpg',
+                             'Mac Laptop Stand',
+                              '$100.00')">
+                              <span class="material-symbols-outlined">add_shopping_cart</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -84,7 +163,14 @@
                             <p class="product-price">$100.00</p>
                         </div>
                         <div class="add-to-cart">
-                            <span class="material-symbols-outlined">add_shopping_cart</span>
+                            <button 
+                            class="cart-button" 
+                            style="color: black;" 
+                            onclick="createCartElement('../product_images/mouse-pads/pickachu-mouse-pad.jpg',
+                             'Pickachu Mouse Pad',
+                              '$100.00')">
+                              <span class="material-symbols-outlined">add_shopping_cart</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -96,7 +182,14 @@
                             <p class="product-price">$100.00</p>
                         </div>
                         <div class="add-to-cart">
-                            <span class="material-symbols-outlined">add_shopping_cart</span>
+                            <button 
+                            class="cart-button" 
+                            style="color: black;" 
+                            onclick="createCartElement('../product_images/mouse-pads/premium-mouse-pad.jpg',
+                             'Premium Mouse Pad',
+                              '$100.00')">
+                              <span class="material-symbols-outlined">add_shopping_cart</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -108,7 +201,14 @@
                             <p class="product-price">$100.00</p>
                         </div>
                         <div class="add-to-cart">
-                            <span class="material-symbols-outlined">add_shopping_cart</span>
+                            <button 
+                            class="cart-button" 
+                            style="color: black;" 
+                            onclick="createCartElement('../product_images/potted_plants/aloevera-plant.jpg',
+                             'Aloevera Plant',
+                              '$100.00')">
+                              <span class="material-symbols-outlined">add_shopping_cart</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -120,7 +220,14 @@
                             <p class="product-price">$100.00</p>
                         </div>
                         <div class="add-to-cart">
-                            <span class="material-symbols-outlined">add_shopping_cart</span>
+                            <button 
+                            class="cart-button" 
+                            style="color: black;" 
+                            onclick="createCartElement('../product_images/chairs/vintage-brown-wooden-chair.jpg',
+                             'Vintage Brown Wooden Chair',
+                              '$100.00')">
+                              <span class="material-symbols-outlined">add_shopping_cart</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -132,7 +239,14 @@
                             <p class="product-price">$100.00</p>
                         </div>
                         <div class="add-to-cart">
-                            <span class="material-symbols-outlined">add_shopping_cart</span>
+                            <button 
+                            class="cart-button" 
+                            style="color: black;" 
+                            onclick="createCartElement('../product_images/potted_plants/bushy-plant.jpg',
+                             'Bushy Plant',
+                              '$100.00')">
+                              <span class="material-symbols-outlined">add_shopping_cart</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -144,7 +258,14 @@
                             <p class="product-price">$100.00</p>
                         </div>
                         <div class="add-to-cart">
-                            <span class="material-symbols-outlined">add_shopping_cart</span>
+                            <button 
+                            class="cart-button" 
+                            style="color: black;" 
+                            onclick="createCartElement('../product_images/mouse-pads/big- normal-mouse-pad.jpg',
+                             'Big Normal Mouse Pad',
+                              '$100.00')">
+                              <span class="material-symbols-outlined">add_shopping_cart</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -200,11 +321,5 @@
         </div>
     </footer>
 
-    <script>
-        function scrolltoview(){
-            const elem = document.getElementById("sec-1");
-            elem.scrollIntoView({behavior: "smooth"});
-        }
-    </script>
 </body>
 </html>

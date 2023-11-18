@@ -2,6 +2,119 @@
     margin: 0px;
     padding: 0px;
 }
+
+.overlay-sidebar{
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
+    position: fixed;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    justify-content: end;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cart-sidebar{
+    height: 100%;
+    width: 450px;
+    background-color: white;
+    z-index: 10000;
+    position: fixed;
+    overflow-x: hidden;
+    box-shadow: -5px -5px 5px grey;
+}
+
+.cart-head{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+    padding: 10px 0px;
+    border-bottom: 1px solid grey;
+}
+
+.cart-title{
+    margin-left: 10px;
+    font-weight: 200;
+}
+
+.close-button-sidebar{
+    margin-right: 10px;
+    background-color: transparent;
+    border: none;
+}
+
+.cart-body{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-direction: column;
+    /* background-color: red; */
+    height: 100%;
+}
+
+.another-cart-div{
+    display: flex;
+    padding: 20px;
+    justify-content: start;
+    align-items: center;
+}
+
+.cart-product-image{
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+    margin-right: 10px;
+    border-radius: 8px;
+    
+}
+
+.cart-product-desc{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    /* background-color: red; */
+    height: 100%;
+    color: black;
+}
+
+.cart-product-title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+}
+
+.cart-product-price{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.checkout-btn-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+td{
+    margin-left: 20px;
+}
+
+.checkout-btn{
+    background-color: rgb(19, 19, 44);
+    padding: 20px 80px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    border-radius: 5px;
+}
+
 header{
     width: 100vw;
 }
@@ -48,6 +161,13 @@ nav{
 .nav-ul li a{
     color: grey;
     text-decoration: none;
+}
+
+.cart-button{
+    background-color: transparent;
+    color: grey;
+    border: none;
+    cursor: pointer;
 }
 
 .material-symbols-outlined {
