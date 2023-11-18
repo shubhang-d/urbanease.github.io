@@ -2,6 +2,33 @@
     margin: 0px;
     padding: 0px;
 }
+
+.overlay{
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.overlay-sidebar{
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
+    position: fixed;
+    visibility: hidden;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cart-sidebar{
+    height: 100%;
+    width: 350px;
+    background-color: white;
+    z-index: 10000;
+    position: fixed;
+    overflow-x: hidden;
+    box-shadow: 5px 5px 5px grey;
+}
+
 header{
     background-image: url('index_images/furniture.jpg');
     background-color: black;
@@ -56,6 +83,13 @@ nav{
 .nav-ul li a{
     color: white;
     text-decoration: none;
+}
+
+.cart-button{
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
 .material-symbols-outlined {
