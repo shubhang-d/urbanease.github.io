@@ -38,3 +38,23 @@ function createCartElement(link, title, price){
     cartProductsCards.append(cartProduct);
 
 }
+
+function createTableElement(title, price){
+    const tr = document.createElement('tr');
+    const td = document.createElement('td')
+    td.innerHTML=title;
+    tr.append(td);
+    const td1 = document.createElement('td')
+    td1.innerText=price;
+    tr.append(td1);
+    // alert(text, price)
+    const table = document.querySelector('table');
+    // table.insertBefore(tr, table.children['0'].children['3']);
+    table.insertBefore(tr, table.children['0']);
+
+}
+
+function updateCart(link,title,price){
+    createCartElement(link,title,price);
+    createTableElement(title,price);
+}

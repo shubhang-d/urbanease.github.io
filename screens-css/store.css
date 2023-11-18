@@ -99,8 +99,30 @@
     margin-bottom: 20px;
 }
 
+.cart-total{
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    /* border: 1px solid black; */
+
+}
+
+th{
+    width: 200px;
+    text-align: center;
+    border-bottom: 1px solid grey;
+    font-family: 'Roboto';
+    /* border-right: 1px solid grey; */
+}
+
 td{
-    margin-left: 20px;
+    width: 200px;
+    text-align: center;
+    border-bottom: 1px solid grey;
+    font-family: 'Roboto';
+    /* border-right: 1px solid grey; */
 }
 
 .checkout-btn{
