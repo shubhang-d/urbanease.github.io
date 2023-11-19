@@ -39,6 +39,8 @@ function createCartElement(link, title, price){
 
 }
 
+let gTotal = 0;
+
 function createTableElement(title, price){
     const tr = document.createElement('tr');
     const td = document.createElement('td')
@@ -54,7 +56,17 @@ function createTableElement(title, price){
 
 }
 
+function updateGrandTotal(price){
+    gTotal += parseFloat(price.slice(1));
+    const table = document.querySelector("table");
+    var nfc = table.children.length - 1;
+    table.children[nfc].children['0'].children['1'].innerText="";
+    // alert(gTotal);
+    table.children[nfc].children['0'].children['1'].innerText="$"+gTotal.toString();
+}
+
 function updateCart(link,title,price){
     createCartElement(link,title,price);
     createTableElement(title,price);
+    updateGrandTotal(price);
 }
