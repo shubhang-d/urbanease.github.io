@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../about_us_images/th\ \(2\).jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: fixed;
+    background-color:red;
+}
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 800px;
+    
+}
+.team-container h1 {
+    margin: top 40px;
+    position:absolute;
+    text-align:center;
+    color:aqua;
+}
+.team-member {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 05px;
+    padding: 05px;
+    text-align: center;
+    width: 200px;
+}
+.team-member img {
+    border-radius: 50%;
+    height: 200px;
+    width: 195px;
+}
+.team-member h2 {
+    margin-top: 10px;
+    color: #333;
+}
+.team-member p {
+    color: #666;
+}
+.head{
+   color:aqua;
+   border-radius: 25%;
+   background-color:black;
+   margin-right:10%;
+   height:200px;
+   width:200px;
+
+
+}
+.head h1{
+    text-align: center;
+    padding-top:50px;
+}
+.color1{
+    background-color: aqua;
+}
+.color2{
+    background-color:#333;
+    border-radius:10px;
+}
+.color3{
+    background-color:greenyellow;
+}
+.color4{
+    background-color:rgb(17, 156, 110);
+}
+.color5{
+    background-color:rgb(154, 66, 248);
+}
