@@ -104,6 +104,27 @@
     margin-top: 20px;
 }
 
+.cart-total{
+    display: flex;
+    justify-content: center;
+}
+
+th{
+    width: 200px;
+    text-align: center;
+    border-bottom: 1px solid grey;
+    font-family: 'Roboto';
+    /* border-right: 1px solid grey; */
+}
+
+td{
+    width: 200px;
+    text-align: center;
+    border-bottom: 1px solid grey;
+    font-family: 'Roboto';
+    /* border-right: 1px solid grey; */
+}
+
 .checkout-btn{
     background-color: rgb(19, 19, 44);
     padding: 20px 80px;

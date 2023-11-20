@@ -69,4 +69,5 @@ function updateCart(link,title,price){
     createCartElement(link,title,price);
     createTableElement(title,price);
     updateGrandTotal(price);
+    alert("This item has been added to the cart");
 }

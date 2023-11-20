@@ -12,25 +12,83 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="../screens-css/store.css">
+    <script src="../screens-js/store.js"></script>
     <title>Urban Ease - Home Office Furniture</title>
 </head>
 <body>
+
+    <div class="overlay-sidebar" id="sidebarOverlay">
+        <div class="cart-sidebar" id="cartSidebar">
+            <!-- <p>this is cart sidebar</p> -->
+            <div class="cart-head">
+                <p class="cart-title">Shopping Cart</p>
+                <button class="close-button-sidebar" onclick="closeSidebar()"><span class="material-symbols-outlined">close</span></button>
+            </div>
+            <div class="cart-body">
+                <div class="cart-products-cards">
+                    <!-- <div class="cart-product">
+                        <div class="another-cart-div">
+                            <img class="cart-product-image" src="../product_images/chairs/brown-wooden-framed-gray-padded-chair.jpg" alt="chair">
+                            <div class="cart-product-desc">
+                                <p class="cart-product-title">Brown Wooden Framed gray Padded Chair</p>
+                                <p class="cart-product-price">$100.00</p>
+                            </div>
+                        </div>
+                        <div class="cart-product">
+                            <div class="another-cart-div">
+                                <img class="cart-product-image" src="../product_images/chairs/brown-wooden-framed-gray-padded-chair.jpg" alt="chair">
+                                <div class="cart-product-desc">
+                                    <p class="cart-product-title">Brown Wooden Framed gray Padded Chair</p>
+                                    <p class="cart-product-price">$100.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                <hr>
+                <div class="cart-total">
+                    <table>
+                        <!-- <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                        </tr> -->
+                        <!-- <tr>
+                            <td>Brown Wooden Framed gray Padded Chair</td>
+                            <td>$100.00</td>
+                        </tr>
+                        <tr>
+                            <td>Brown Wooden Framed gray Padded Chair</td>
+                            <td>$100.00</td>
+                        </tr> -->
+                        <tr>
+                            <th>Total</th>
+                            <th>$0.00</th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="checkout-btn-div">
+                    <a href="checkout_form.html"><button class="checkout-btn">checkout</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <header>
         <nav>
             <div id="logo-header">
-                <img src="../index_images/Urban_logo_initial.png" alt="logo" class="logofoot">
-                <p class="website-name"><a href="index.html">Urban Ease</p>
+                <a href="../index.html"><img src="../index_images/Urban_logo_initial.png" alt="Logo" class="logofoot""></a>
+                <a href="../index.html" style="text-decoration: none;"><p class="website-name">Urban Ease</p></a>
                 <ul class="nav-ul">
-                    <li>Store</li>
+                    <li><a href="screens/store.html">Store</a></li>
                     <li>Office</li>
                     <li>Home Office</li>
                 </ul>
             </div>
             <ul class="nav-ul">
-                <li>About</li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="https://forms.gle/QQrjjX8SZX1guJfv9">Contact</a></li>
                 <li><span class="material-symbols-outlined">search</span></li>
-                <li><span class="material-symbols-outlined">shopping_cart</span></li>
+                <li><button class="cart-button" onclick="openNav()"><span class="material-symbols-outlined">shopping_cart</span></button></li>
                 <li><a href="login_page.html"><span class="material-symbols-outlined">account_circle</span></a></li>
             </ul>
         </nav>
@@ -48,7 +106,14 @@
                             <p class="product-price">$100.00</p>   
                         </div>
                         <div class="add-to-cart">
-                            <span class="material-symbols-outlined">add_shopping_cart</span>
+                            <button 
+                            class="cart-button" 
+                            style="color: black;" 
+                            onclick="updateCart('../product_images/lamps/1.jpg',
+                             'Radiant Refinement: Illuminate Your Space with Luxury Lamps',
+                              '$100.00')">
+                              <span class="material-symbols-outlined">add_shopping_cart</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -60,7 +125,14 @@
                             <p class="product-price">$100.00</p>
                         </div>
                         <div class="add-to-cart">
-                            <span class="material-symbols-outlined">add_shopping_cart</span>
+                            <button 
+                            class="cart-button" 
+                            style="color: black;" 
+                            onclick="updateCart('../product_images/lamps/2.jpg',
+                             'Luminous Elegance: Artisan-crafted Lamps for Distinctive Interiors',
+                              '$100.00')">
+                              <span class="material-symbols-outlined">add_shopping_cart</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -72,7 +144,14 @@
                             <p class="product-price">$100.00</p>   
                         </div>
                         <div class="add-to-cart">
-                            <span class="material-symbols-outlined">add_shopping_cart</span>
+                            <button 
+                            class="cart-button" 
+                            style="color: black;" 
+                            onclick="updateCart('../product_images/lamps/3.jpg',
+                             'Glowing Opulence: Elevate Your Ambiance with Premium Lighting',
+                              '$100.00')">
+                              <span class="material-symbols-outlined">add_shopping_cart</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -84,7 +163,14 @@
                             <p class="product-price">$100.00</p>
                         </div>
                         <div class="add-to-cart">
-                            <span class="material-symbols-outlined">add_shopping_cart</span>
+                            <button 
+                            class="cart-button" 
+                            style="color: black;" 
+                            onclick="updateCart('../product_images/lamps/4.jpg',
+                             'Illuminating Majesty: Luxury Lamps That Define Sophistication',
+                              '$100.00')">
+                              <span class="material-symbols-outlined">add_shopping_cart</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -96,7 +182,14 @@
                             <p class="product-price">$100.00</p>   
                         </div>
                         <div class="add-to-cart">
-                            <span class="material-symbols-outlined">add_shopping_cart</span>
+                            <button 
+                            class="cart-button" 
+                            style="color: black;" 
+                            onclick="updateCart('../product_images/lamps/5.jpg',
+                             'Designer Radiance: Discover the Epitome of Luxury Lighting',
+                              '$100.00')">
+                              <span class="material-symbols-outlined">add_shopping_cart</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -108,7 +201,14 @@
                             <p class="product-price">$100.00</p>
                         </div>
                         <div class="add-to-cart">
-                            <span class="material-symbols-outlined">add_shopping_cart</span>
+                            <button 
+                            class="cart-button" 
+                            style="color: black;" 
+                            onclick="updateCart('../product_images/lamps/6.jpg',
+                             'Enlightened Living: Luxe Lamps for Discerning Aesthetics',
+                              '$100.00')">
+                              <span class="material-symbols-outlined">add_shopping_cart</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -120,7 +220,14 @@
                             <p class="product-price">$100.00</p>   
                         </div>
                         <div class="add-to-cart">
-                            <span class="material-symbols-outlined">add_shopping_cart</span>
+                            <button 
+                            class="cart-button" 
+                            style="color: black;" 
+                            onclick="updateCart('../product_images/lamps/7.jpg',
+                             'Bespoke Brilliance: Unveiling the Artistry of Luxury Illumination',
+                              '$100.00')">
+                              <span class="material-symbols-outlined">add_shopping_cart</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -132,7 +239,14 @@
                             <p class="product-price">$100.00</p>
                         </div>
                         <div class="add-to-cart">
-                            <span class="material-symbols-outlined">add_shopping_cart</span>
+                            <button 
+                            class="cart-button" 
+                            style="color: black;" 
+                            onclick="updateCart('../product_images/lamps/8.jpg',
+                             'Chic Luminescence: Statement Lamps for Modern Opulence',
+                              '$100.00')">
+                              <span class="material-symbols-outlined">add_shopping_cart</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -144,7 +258,14 @@
                             <p class="product-price">$100.00</p>   
                         </div>
                         <div class="add-to-cart">
-                            <span class="material-symbols-outlined">add_shopping_cart</span>
+                            <button 
+                            class="cart-button" 
+                            style="color: black;" 
+                            onclick="updateCart('../product_images/lamps/9.jpg',
+                             'Gleam and Glamour: Transform Your Space with Luxury Lighting',
+                              '$100.00')">
+                              <span class="material-symbols-outlined">add_shopping_cart</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -156,7 +277,14 @@
                             <p class="product-price">$100.00</p>
                         </div>
                         <div class="add-to-cart">
-                            <span class="material-symbols-outlined">add_shopping_cart</span>
+                            <button 
+                            class="cart-button" 
+                            style="color: black;" 
+                            onclick="updateCart('../product_images/lamps/10.jpg',
+                             'Ethereal Radiance: The Finest Collection of Luxury Lamps',
+                              '$100.00')">
+                              <span class="material-symbols-outlined">add_shopping_cart</span>
+                            </button>
                         </div>
                     </div>
                 </div>
