@@ -1,0 +1,122 @@
+        body {
+            background-color: #f4f4f4;
+            font-family: 'Open Sans', sans-serif;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Order Confirmation Section */
+        .order-confirmation {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 50px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .order-confirmation h1 {
+            font-size: 40px;
+            font-weight: bold;
+            color: #4285f4;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        .order-confirmation h2 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #4285f4;
+        }
+
+        .order-confirmation p {
+            font-size: 18px;
+        }
+
+        .order-confirmation img {
+            width: 100px;
+            height: 100px;
+            margin: 20px auto;
+            display: block;
+            animation: rotate 2s linear infinite;
+        }
+
+        /* Order Details Section */
+        .order-details {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #f8f8f8;
+            border-radius: 10px;
+        }
+
+        .order-details h2 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #4285f4;
+        }
+
+        .order-details ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .order-details li {
+            margin-bottom: 10px;
+        }
+
+        .order-details li span.label {
+            font-weight: bold;
+            color: #4285f4;
+        }
+
+        .order-details li span.value {
+            color: #333;
+        }
+
+        /* Call to Action Section */
+        .call-to-action {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .call-to-action a {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #4285f4;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 1s ease-in-out;
+        }
+
+        .call-to-action a:hover {
+            background-color: #337ab7;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        img {
+            width: 300px; /* Adjust the width as needed */
+            height: auto;
+            margin: 20px auto;
+            display: block;
+            animation: rotate 3s linear infinite;
+        }
